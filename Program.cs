@@ -1,10 +1,12 @@
-﻿namespace InterviewPrograms;
-
-class Program
+﻿namespace InterviewPrograms
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        Delegate obj = new Delegate();
-        obj.Execute();
+        private static void Main(string[] args)
+        {
+            //Delegate obj = new Delegate();
+            CallbackDelegate obj = new CallbackDelegate();
+            obj.Execute();
+        }
     }
 }

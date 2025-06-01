@@ -1,17 +1,20 @@
-class Delegate
+namespace InterviewPrograms
 {
-    public delegate void CallbackDelegate(string message);
-    public void Execute()
+    internal class Delegate
     {
-        // Instantiate the delegate.
-        CallbackDelegate delhandler = new CallbackDelegate(DelegateMethod);
+        private delegate void CallbackDelegate(string message);
+        internal void Execute()
+        {
+            // instantiate the delegate.
+            CallbackDelegate delhandler = new CallbackDelegate(DelegateMethod);
 
-        // Call the delegate.
-        delhandler.Invoke("Hello Delegate");
-    }
-    // Create a method for a delegate.
-    public static void DelegateMethod(string message)
-    {
-        Console.WriteLine(message);
+            // call the delegate.
+            delhandler.Invoke("Hello Delegate");
+        }
+        // create a method for a delegate.
+        private static void DelegateMethod(string message)
+        {
+            Console.WriteLine(message);
+        }
     }
 }
