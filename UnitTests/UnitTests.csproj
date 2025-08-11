@@ -21,6 +21,7 @@
   </ItemGroup>
   <ItemGroup>
 	  <ProjectReference Include="..\InterviewPrograms\InterviewPrograms.csproj" />
+    <ProjectReference Include="..\Assembly2\Assembly2.csproj" />
 	</ItemGroup>
 
 

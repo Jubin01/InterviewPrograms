@@ -1,4 +1,7 @@
-﻿namespace InterviewPrograms
+﻿using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleToAttribute("UnitTests")]
+namespace InterviewPrograms
 {
     internal class Program
     {

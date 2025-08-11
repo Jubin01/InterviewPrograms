@@ -1,6 +1,5 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleToAttribute("UnitTests")]
 namespace InterviewPrograms
 {
     internal class Delegate
@@ -15,7 +14,7 @@ namespace InterviewPrograms
             delhandler.Invoke("Hello Delegate");
         }
         // create a method for a delegate.
-        private static void DelegateMethod(string message)
+        internal void DelegateMethod(string message)
         {
             Console.WriteLine(message);
         }
