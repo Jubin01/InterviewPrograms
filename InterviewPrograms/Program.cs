@@ -9,7 +9,10 @@ namespace InterviewPrograms
         {
             //Delegate obj = new Delegate();
             // CallbackDelegate obj = new CallbackDelegate();
-            ProtectedInternalTestAccess obj = new ProtectedInternalTestAccess();
+            //ProtectedInternalTestAccess obj = new ProtectedInternalTestAccess();
+            // AbstractTest obj = new AbstractTest();
+            //SealedTest obj = new SealedTest();
+            SealedMemberTest obj = new SealedMemberTest();
             obj.Execute();
         }
     }
